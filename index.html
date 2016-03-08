@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>utiredbro</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+
+      var name = prompt("What's you're name?");
+      var namequestion = "You tired, " + name + "? OK for Yes, Cancel for No.";
+      var utiredbro = confirm(namequestion);
+      if (utiredbro == true) {
+        x = "That sucks, " + name + ".";
+      } else {
+        x = "Lucky you, " + name + ".";
+      }
+      var theHTML = "<h1>" + x + "</h1>";
+      $("body").html(theHTML);
+
+    });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
